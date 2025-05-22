@@ -14,15 +14,14 @@ import java.util.Date;
 @AllArgsConstructor
 @Getter
 @Setter
-public class User {
+public class Resume {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int userId;
-    private String userName;
-    private String userPassword;
-    private String userEmail;
-    private String userJobRole;
-    private Date birthDay;
-
+    private int resumeId;
+    private String resumeFileName;
+    private String resumeFilePath;
+    private String resumeFileType;
+    private Date resumeUploadDate;
+    private boolean resumeFileIsActive = true;
 
 }
