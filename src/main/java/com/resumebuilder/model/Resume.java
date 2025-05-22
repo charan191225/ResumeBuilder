@@ -3,11 +3,11 @@ package com.resumebuilder.model;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.Mapping;
 
 import java.util.Date;
 
 @Entity
-@Table(name = "users")
 @Component
 @Data
 @NoArgsConstructor
@@ -23,5 +23,6 @@ public class Resume {
     private String resumeFileType;
     private Date resumeUploadDate;
     private boolean resumeFileIsActive = true;
+    private int userId;
 
 }
